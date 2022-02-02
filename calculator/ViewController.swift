@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     @IBAction func setPoint(_ sender: Any) {
         resultLable?.text = calculator.setPoint()
     }
+    
     // лучше все разделять отступом
     @IBAction func operatorsButton(_ sender: UIButton) {
         resultLable?.text = calculator.setOperator(sender.tag)
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
     @IBAction func sqrt(_ sender: Any) {
         resultLable?.text = calculator.sqrt()
     }
+    
     @IBAction func clearAll(_ sender: Any) {
         resultLable?.text = calculator.clearAll()
     }
