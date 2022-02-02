@@ -1,6 +1,6 @@
 import Foundation // она по дефолту импортируется, но если не используешь убирай
 // пробел перед {
-class SimpeCalculator {
+final class SimpeCalculator {
     
     // тип можно не писать)
     private var firstNumber = ""
