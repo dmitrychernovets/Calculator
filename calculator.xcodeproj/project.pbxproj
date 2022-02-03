@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935AB06F27AC5A87000A9A51 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935AB06E27AC5A87000A9A51 /* Number.swift */; };
 		938795A12794844200F11B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795A02794844200F11B21 /* AppDelegate.swift */; };
 		938795A32794844200F11B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795A22794844200F11B21 /* SceneDelegate.swift */; };
 		938795A52794844200F11B21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795A42794844200F11B21 /* ViewController.swift */; };
@@ -16,7 +17,7 @@
 		938795B82794844300F11B21 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795B72794844300F11B21 /* calculatorTests.swift */; };
 		938795C22794844300F11B21 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795C12794844300F11B21 /* calculatorUITests.swift */; };
 		938795C42794844300F11B21 /* calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795C32794844300F11B21 /* calculatorUITestsLaunchTests.swift */; };
-		938795D12794905100F11B21 /* simpleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795D02794905100F11B21 /* simpleCalculator.swift */; };
+		938795D12794905100F11B21 /* SimpleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938795D02794905100F11B21 /* SimpleCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		935AB06E27AC5A87000A9A51 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		9387959D2794844200F11B21 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938795A02794844200F11B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938795A22794844200F11B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		938795BD2794844300F11B21 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938795C12794844300F11B21 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		938795C32794844300F11B21 /* calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		938795D02794905100F11B21 /* simpleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleCalculator.swift; sourceTree = "<group>"; };
+		938795D02794905100F11B21 /* SimpleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,8 @@
 				938795A92794844300F11B21 /* Assets.xcassets */,
 				938795AB2794844300F11B21 /* LaunchScreen.storyboard */,
 				938795AE2794844300F11B21 /* Info.plist */,
-				938795D02794905100F11B21 /* simpleCalculator.swift */,
+				938795D02794905100F11B21 /* SimpleCalculator.swift */,
+				935AB06E27AC5A87000A9A51 /* Number.swift */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -261,8 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935AB06F27AC5A87000A9A51 /* Number.swift in Sources */,
 				938795A52794844200F11B21 /* ViewController.swift in Sources */,
-				938795D12794905100F11B21 /* simpleCalculator.swift in Sources */,
+				938795D12794905100F11B21 /* SimpleCalculator.swift in Sources */,
 				938795A12794844200F11B21 /* AppDelegate.swift in Sources */,
 				938795A32794844200F11B21 /* SceneDelegate.swift in Sources */,
 			);

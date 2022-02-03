@@ -7,7 +7,7 @@ final class ViewController: UIViewController {
     private var calculator = SimpeCalculator()
     
     // аутлеты тоже стоит помечать как private если не используются вне класса
-    @IBOutlet private weak var resultLable: UILabel! // почему тут ?
+    @IBOutlet private weak var resultLable: UILabel!// почему тут ?
     @IBOutlet private weak var sqrt: UIButton!
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ final class ViewController: UIViewController {
     @IBAction private func numberButton(_ sender: UIButton) {
         // как обратитья к title ? button.titleLabel.text
         // нужно что-то сразу String
-        resultLable.text = calculator.setNumbers(number: String(sender.tag))
+        resultLable.text = calculator.setNumbers(sender.configuration?.title ?? "Error")
         // интересное решение) а мб брать просто текст кнопки? или на тот момент не нашел как и поэтому тег?
     }
     
@@ -31,7 +31,7 @@ final class ViewController: UIViewController {
     
     // лучше все разделять отступом
     @IBAction private func operatorsButton(_ sender: UIButton) {
-        resultLable.text = calculator.setOperator(sender.tag)
+        resultLable.text = calculator.setOperator(sender.configuration?.title ?? "error")
     }
     
     @IBAction private func calculate() {
