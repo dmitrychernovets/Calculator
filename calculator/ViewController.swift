@@ -7,8 +7,8 @@ final class ViewController: UIViewController {
     private var calculator = SimpeCalculator()
     
     // аутлеты тоже стоит помечать как private если не используются вне класса
-    @IBOutlet weak private var resultLable: UILabel! // почему тут ?
-    @IBOutlet weak private var sqrt: UIButton!
+    @IBOutlet private weak var resultLable: UILabel! // почему тут ?
+    @IBOutlet private weak var sqrt: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ final class ViewController: UIViewController {
     }
     
     // если sender не планируешь использовать, то лучше делать аутлет без него
-    @IBAction private func setPoint(_ sender: Any) {
+    @IBAction func setPoint() {
         resultLable.text = calculator.setPoint()
     }
     
@@ -34,15 +34,15 @@ final class ViewController: UIViewController {
         resultLable.text = calculator.setOperator(sender.tag)
     }
     
-    @IBAction private func calculate(_ sender: UIButton) {
+    @IBAction private func calculate() {
         resultLable.text = calculator.calculate()
     }
     
-    @IBAction private func sqrt(_ sender: Any) {
+    @IBAction private func sqrtCalc() {
         resultLable.text = calculator.sqrt()
     }
-    
-    @IBAction private func clearAll(_ sender: Any) {
+       
+    @IBAction private func clearAll() {
         resultLable.text = calculator.clearAll()
     }
 }
